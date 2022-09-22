@@ -10,12 +10,21 @@
 <body>
     <h1 id="title">Calculadora</h1>
 
-    <input type="text" placeholder="Primeiro Numero">
-    <input type="text" placeholder="Segundo Numero">
-    <input type="text" placeholder="Operacao">
-    <button>Calcular</button>
+    <fieldset>
+        <legend>calculadora</legend>
+            <input type="text" placeholder="Primeiro Numero">    
+            <select name="opereçao" id="op">
+                <optgroup label="operação">
+                    <option value="soma">soma</option>
+                    <option value="sub">subtração</option>
+                    <option value="div">divisão</option>
+                    <option value="multi">multiplicação</option>
+            <input type="text" placeholder="Segundo Numero">
+    <button id="post">Calcular</button>
     <p>Resultado: </p>
+    </fieldset>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
