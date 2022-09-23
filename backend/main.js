@@ -15,8 +15,8 @@ app.get('/soma', (req, res) => {
   const y1 = req.query.y
   const y = parseInt(y1)
   const x = parseInt(x1)
-  const result = calculadora.soma(x,y)
-  res.send({result})
+  const resultado = calculadora.soma(x,y)
+  res.send({resultado})
 })
 
 app.get('/sub', (req, res) => {
@@ -24,8 +24,8 @@ app.get('/sub', (req, res) => {
   const y1 = req.query.y
   const y = parseInt(y1)
   const x = parseInt(x1)
-  const result = calculadora.subtracao(x,y)
-  res.send({result})
+  const resultado = calculadora.subtracao(x,y)
+  res.send({resultado})
 })
 
 app.get('/div', (req, res) => {
@@ -33,8 +33,8 @@ app.get('/div', (req, res) => {
   const y1 = req.query.y
   const y = parseInt(y1)
   const x = parseInt(x1)
-  const result = calculadora.divisao(x,y)
-  res.send({result})
+  const resultado = calculadora.divisao(x,y)
+  res.send({resultado})
 })
 
 app.get('/multi', (req, res) => {
@@ -42,8 +42,8 @@ app.get('/multi', (req, res) => {
   const y1 = req.query.y
   const y = parseInt(y1)
   const x = parseInt(x1)
-  const result = calculadora.multiplicacao(x,y)
-  res.send({result})
+  const resultado = calculadora.multiplicacao(x,y)
+  res.send({resultado})
 })
 
 app.listen(port, () => {
